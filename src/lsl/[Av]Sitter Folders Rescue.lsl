@@ -57,6 +57,8 @@ default {
             llOwnerSay("No AvSitter notecard data found.");
             clear();
         }
+
+        llLinksetDataDeleteFound("^" + LSD_PROJECT, "");
     }
 
     listen( integer channel, string name, key id, string message ) {
